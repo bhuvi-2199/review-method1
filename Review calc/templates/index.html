@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arithmetic operations</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="calcform" action="/" name="calculator" type="integer" style="display: flex; width: 16rem; margin-left: auto;margin-right: auto; flex-direction: column;" method="POST">
+        <label class="label" for="number1">ENTER THE FIRST NUMBER:</label>
+        <input type="number" name="a" value="{{a}}" id="number1"/><br /><br />
+        <label for="number2">ENTER THE SECOND NUMBER:</label>
+        <input type="number" name="b" value="{{b}}" id="number2" /> <br /><br />
+        <label for="total"> RESULT:</label>
+        <input type="number" id="total" name="total" value="{{ans}}"/> 
+        <br><br>
+        <label>SELECT OPERATION:</label>
+        <br>
+        <input type="submit" value="+" name="add">
+        <input type="submit" value="-" name="sub" >
+        <input type="submit" value="*" name="mult" >
+        <input type="submit" value="/" name="div" >
+        <input type="submit" value="%" name="mod" >
+        <br ><br >
+      </form>
+    </div>
+  </body>
+</html>
